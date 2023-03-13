@@ -1,13 +1,16 @@
+nav {
+  background-color: #3c641b;
+}
 .nav-links {
   display: flex;
   list-style: none;
   text-align: center;
-  color: #c50610;
+  color: #fff;
 }
 
 .nav-links li {
-  margin: 0 50px;
-  color: #c50610;
+  margin: 0 30px;
+  color: #ffd;
 
   display: inline-block;
   word-wrap: no-wrap;
@@ -15,7 +18,7 @@
 }
 
 .in {
-  color: #c50610;
+  color: #fff;
 }
 
 .nav-links li::before {
@@ -32,12 +35,12 @@
 
 .nav-links li:hover::before {
   width: 100%;
-  background-color: #c50610;
+  background-color: #fff;
 }
 
 .nav-links li a {
   text-decoration: none;
-  color: #c50610;
+  color: #fff;
 }
 
 .burger {

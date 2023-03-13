@@ -1,46 +1,130 @@
 import React from "react";
-import villamantwo from "../assets/villamantwo.png";
-import villamanone from "../assets/villamanone.png";
+import milik from "../assets/milik.jpeg";
+import veg from "../assets/veg.jpeg";
+import manoman from "../assets/manoman.png";
+import { BsFillCheckCircleFill } from "react-icons/bs";
+
 export default function Hero() {
   return (
-    <main className="max-w-7xl flex justify-center items-center w-full mt-4">
-      <section className="w-[40%] min-h-[40vh] font-[Poppins]">
-        <h1 className="text-[4rem]  text-[#3c641b] font-[Sora] leading-[3.9rem] tracking-tighter  font-bold">
-          Let your <span className="text-[#c40414]">groceries </span>
-          <br /> come to you
-        </h1>
-        <p className="text-[1.4rem]  text-gray-500 font-[Sora] font-normal mt-5 ">
-          {" "}
-          Get fresh groceries online without stepping out to <br /> make
-          delicious food with the freshest ingredients.
-        </p>
-        <button className=" mt-6 w-[20rem] h-[60px] rounded-full border border-[#c50610] text-[1.4rem] text-[#c50610] hover:text-white hover:bg-[#c50610]   transition duration-300 ease-in">
-          <a href="#contact-us">send us a message</a>
-        </button>{" "}
-      </section>
-      <section className="w-[40%] min-h-[40vh] ">
-        <img
-          src={villamantwo}
-          alt="Villa mart hero image"
-          className="w-[27rem] h-[25rem]"
-        />
-      </section>
-      <section className="w-[20%] min-h-[40vh]  flex justify-center items-center flex-col ">
-        <div className="w-full max-h-[200px]">
+    <>
+      <main className="w-7xl max-w-7xl mx-auto flex justify-center items-center w-full mt-4">
+        <section className="w-[60%] h-auto font-[Poppins]">
+          <h1 className="text-[4.5rem]  text-[#3c641b] font-[Sora] leading-[3.9rem] tracking-[-0.07rem]  font-bold">
+            Let your <span className="text-[#c40414]">groceries </span>
+            come to you
+          </h1>
+          <p className="text-[1.4rem]  text-gray-500 font-[Sora] font-normal mt-4 ">
+            {" "}
+            Get fresh groceries online without stepping out, <br /> make
+            delicious foods with the freshest ingredients.
+          </p>
+          <button className=" mt-6 w-[15rem] h-[60px] rounded-[10px] border border-[#c50610] text-[1.4rem] text-[#c50610] hover:text-white hover:bg-[#c50610]   transition duration-300 ease-in">
+            <a href="#contact-us">send us a message</a>
+          </button>{" "}
+          <div className=" mt-4 w-full text-[1.4rem]  text-gray-500 font-[Sora] font-normal ">
+            <div className=" flex  items-center ">
+              <div className=" flex justify-center items-center mr-4 ">
+                <BsFillCheckCircleFill className="text-[1.4rem]  text-[#FFD700] nt-normal pr-1" />
+                <p>Fresh Farm Foods</p>
+              </div>
+              <div className=" flex justify-center items-center ">
+                <BsFillCheckCircleFill className="text-[1.4rem]  text-[#FFD700] nt-normal pr-1 " />
+                <p>100% Guarantee</p>
+              </div>
+            </div>
+            <div className=" flex  items-center ">
+              <div className=" flex justify-center items-center mr-4">
+                <BsFillCheckCircleFill className="text-[1.4rem]  text-[#FFD700] nt-normal pr-1" />
+                <p>Cash on Delivery</p>
+              </div>
+              <div className=" flex justify-center items-center ">
+                <BsFillCheckCircleFill className="text-[1.4rem]  text-[#FFD700] nt-normal pr-1" />
+                <p>Fast Delivery</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="w-[40%] h-auto">
           <img
-            src="https://images.pexels.com/photos/1128678/pexels-photo-1128678.jpeg?auto=compress&cs=tinysrgb&w=600"
+            src={manoman}
             alt="Villa mart hero image"
             className="w-full h-full"
           />
-        </div>
-        <div className="w-full h-[200px] ">
+        </section>
+      </main>
+
+      <main className="w-7xl mx-auto flex justify-between items-center mt-4">
+        <div className="w-[230px] h-[130px] mx-[2rem] border border-red-500 rounded-[15px] px-4">
           <img
-            src="https://images.pexels.com/photos/4198043/pexels-photo-4198043.jpeg?auto=compress&cs=tinysrgb&w=600"
+            src={milik}
             alt="Villa mart hero image"
-            className="w-full max-h-full"
+            className="w-[30%] h-[50%] mx-auto"
           />
+          <h5 className="text-[1rem]  text-gray-700 font-bold pt-1">
+            Diary Products
+          </h5>
+          <p className="text-[0.88rem] leading-[1rem] text-gray-400 font-normal">
+            {" "}
+            this is the kind of one that will msrtee you in tjhis life aND still
+          </p>
         </div>
-      </section>
-    </main>
+        <div className="w-[230px] h-[130px] mx-[2rem] border border-red-500 rounded-[15px] px-4">
+          <img
+            src={veg}
+            alt="Villa mart hero image"
+            className="w-[30%] h-[50%] mx-auto"
+          />
+          <h5 className="text-[1rem]  text-gray-700 font-bold pt-1">
+            Vegetables and Friuts
+          </h5>
+          <p className="text-[0.88rem] leading-[1rem] text-gray-400 font-normal">
+            {" "}
+            this is the kind of one that will msrtee you in tjhis life aND still
+          </p>
+        </div>
+        <div className="w-[230px] h-[130px] mx-[2rem] border border-red-500 rounded-[15px] px-4">
+          <img
+            src={veg}
+            alt="Villa mart hero image"
+            className="w-[30%] h-[50%] mx-auto"
+          />
+          <h5 className="text-[1rem]  text-gray-700 font-bold pt-1">
+            Vegetables and Friuts
+          </h5>
+          <p className="text-[0.88rem] leading-[1rem] text-gray-400 font-normal">
+            {" "}
+            this is the kind of one that will msrtee you in tjhis life aND still
+          </p>
+        </div>
+        <div className="w-[230px] h-[130px] mx-[2rem] border border-red-500 rounded-[15px] px-4">
+          <img
+            src={veg}
+            alt="Villa mart hero image"
+            className="w-[30%] h-[50%] mx-auto"
+          />
+          <h5 className="text-[1rem]  text-gray-700 font-bold pt-1">
+            Vegetables and Friuts
+          </h5>
+          <p className="text-[0.88rem] leading-[1rem] text-gray-400 font-normal">
+            {" "}
+            this is the kind of one that will msrtee you in tjhis life aND still
+          </p>
+        </div>
+        <div className="w-[230px] h-[130px] mx-[2rem] border border-red-500 rounded-[15px] px-4">
+          <img
+            src={veg}
+            alt="Villa mart hero image"
+            className="w-[30%] h-[50%] mx-auto"
+          />
+          <h5 className="text-[1rem]  text-gray-700 font-bold pt-1">
+            Vegetables and Friuts
+          </h5>
+          <p className="text-[0.88rem] leading-[1rem] text-gray-400 font-normal">
+            {" "}
+            this is the kind of one that will msrtee you in tjhis life aND still
+          </p>
+        </div>
+      </main>
+    </>
   );
 }

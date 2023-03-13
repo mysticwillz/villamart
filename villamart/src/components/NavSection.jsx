@@ -3,7 +3,7 @@ import "./nav.css";
 import villamart from "../assets/villamart.png";
 export default function NavSection() {
   return (
-    <nav className="flex justify-between items-center  w-full  max-w-7xl mx-auto ">
+    <nav className="flex justify-between items-center px-8  w-full mx-auto ">
       <img
         src={villamart}
         alt="villamart logo"
@@ -23,6 +23,12 @@ export default function NavSection() {
             <i class="fa-solid fa-sliders in"></i> reviews
           </a>
         </li>
+        <li className="reviews">
+          <a href="#reviews">
+            {" "}
+            <i class="fa-solid fa-sliders in"></i> reviews
+          </a>
+        </li>
         <li className="about">
           <a href="#services">
             {" "}
@@ -30,7 +36,7 @@ export default function NavSection() {
           </a>
         </li>
       </ul>
-      <button className=" contact w-[10rem] h-[60px] rounded-full border border-[#c50610] text-[1.4rem] text-[#c50610] hover:text-white hover:bg-[#c50610]   transition duration-300 ease-in">
+      <button className=" contact w-[10rem] h-[50px] rounded-[10px] text-[#3c641b]  text-[1.4rem] bg-[#fff] hover:bg-[#3c641b] hover:border hover:border-[#fff]  hover:text-white transition duration-300 ease-in">
         <a href="#contact-us">contact us</a>
       </button>
 

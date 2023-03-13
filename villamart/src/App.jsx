@@ -3,7 +3,7 @@ import NavSection from "./components/NavSection";
 
 function App() {
   return (
-    <main className="flex items-center flex-col min-h-screen">
+    <main>
       <NavSection />
       <Hero />
     </main>
