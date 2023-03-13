@@ -1,6 +1,9 @@
 import React from "react";
 import milik from "../assets/milik.jpeg";
 import veg from "../assets/veg.jpeg";
+import tubers from "../assets/tubers.jpeg";
+import rice from "../assets/rice.jpeg";
+import spices from "../assets/spices.jpeg";
 import manoman from "../assets/manoman.png";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 
@@ -54,7 +57,7 @@ export default function Hero() {
       </main>
 
       <main className="w-7xl mx-auto flex justify-between items-center mt-4">
-        <div className="w-[230px] h-[130px] mx-[2rem] border border-red-500 rounded-[15px] px-4">
+        <div className="w-[230px] h-[130px] mx-[2rem] rounded-[15px] px-4">
           <img
             src={milik}
             alt="Villa mart hero image"
@@ -65,10 +68,10 @@ export default function Hero() {
           </h5>
           <p className="text-[0.88rem] leading-[1rem] text-gray-400 font-normal">
             {" "}
-            this is the kind of one that will msrtee you in tjhis life aND still
+            this is the kind of one that will msrtee you i
           </p>
         </div>
-        <div className="w-[230px] h-[130px] mx-[2rem] border border-red-500 rounded-[15px] px-4">
+        <div className="w-[230px] h-[130px] mx-[2rem] rounded-[15px] px-4">
           <img
             src={veg}
             alt="Villa mart hero image"
@@ -79,49 +82,47 @@ export default function Hero() {
           </h5>
           <p className="text-[0.88rem] leading-[1rem] text-gray-400 font-normal">
             {" "}
-            this is the kind of one that will msrtee you in tjhis life aND still
+            this is the kind of one that will msrtee you in
           </p>
         </div>
-        <div className="w-[230px] h-[130px] mx-[2rem] border border-red-500 rounded-[15px] px-4">
+        <div className="w-[230px] h-[130px] mx-[2rem] rounded-[15px] px-4">
           <img
-            src={veg}
+            src={tubers}
+            alt="Villa mart hero image"
+            className="w-[30%] h-[50%] mx-auto"
+          />
+          <h5 className="text-[1rem]  text-gray-700 font-bold pt-1">Tubers</h5>
+          <p className="text-[0.88rem] leading-[1rem] text-gray-400 font-normal">
+            {" "}
+            this is the kind of one that will msrtee you in tjhi
+          </p>
+        </div>
+        <div className="w-[230px] h-[130px] mx-[2rem] rounded-[15px] px-4">
+          <img
+            src={spices}
             alt="Villa mart hero image"
             className="w-[30%] h-[50%] mx-auto"
           />
           <h5 className="text-[1rem]  text-gray-700 font-bold pt-1">
-            Vegetables and Friuts
+            Spices and Seasoning
           </h5>
           <p className="text-[0.88rem] leading-[1rem] text-gray-400 font-normal">
             {" "}
-            this is the kind of one that will msrtee you in tjhis life aND still
+            this is the kind of one that will msrtee you in jh
           </p>
         </div>
-        <div className="w-[230px] h-[130px] mx-[2rem] border border-red-500 rounded-[15px] px-4">
+        <div className="w-[230px] h-[140px] mx-[2rem] rounded-[15px] px-4">
           <img
-            src={veg}
+            src={rice}
             alt="Villa mart hero image"
             className="w-[30%] h-[50%] mx-auto"
           />
           <h5 className="text-[1rem]  text-gray-700 font-bold pt-1">
-            Vegetables and Friuts
+            Grains and flour
           </h5>
           <p className="text-[0.88rem] leading-[1rem] text-gray-400 font-normal">
             {" "}
-            this is the kind of one that will msrtee you in tjhis life aND still
-          </p>
-        </div>
-        <div className="w-[230px] h-[130px] mx-[2rem] border border-red-500 rounded-[15px] px-4">
-          <img
-            src={veg}
-            alt="Villa mart hero image"
-            className="w-[30%] h-[50%] mx-auto"
-          />
-          <h5 className="text-[1rem]  text-gray-700 font-bold pt-1">
-            Vegetables and Friuts
-          </h5>
-          <p className="text-[0.88rem] leading-[1rem] text-gray-400 font-normal">
-            {" "}
-            this is the kind of one that will msrtee you in tjhis life aND still
+            this is the kind of one that will msrtee you in tj
           </p>
         </div>
       </main>
