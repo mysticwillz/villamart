@@ -3,7 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body {
+/* body {
   background: rgb(255, 250, 244);
   background: radial-gradient(
     circle,
@@ -11,4 +11,4 @@ body {
     rgba(254, 246, 246, 0.47942927170868344) 100%,
     rgba(238, 230, 227, 1) 100%
   );
-}
+} */
