@@ -9,12 +9,18 @@ export default function Services() {
       </h1>
       <section className="w-full flex justify-between items-center h-[70vh] ">
         <div className="w-[49%] h-full  shadow">
-          <div className="w-full h-[65%] rounded-[0.45rem]  "></div>
+          <div className="w-full h-full rounded-[0.45rem]  ">
+            <img
+              src="https://images.pexels.com/photos/8753672/pexels-photo-8753672.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="service card"
+              className="w-full h-full  rounded-[0.45rem] "
+            />
+          </div>
         </div>
         <div className="w-[49%] h-full flex flex-col justify-between items-center">
-          <div className=" w-full h-[30%] rounded-[0.45rem] shadow"></div>
-          <div className=" w-full h-[30%] rounded-[0.45rem]  shadow"></div>
-          <div className=" w-full h-[30%] rounded-[0.45rem]  shadow"></div>
+          <div className=" w-full h-[30%] rounded-[0.45rem] bg-red-500  shadow"></div>
+          <div className=" w-full h-[30%] rounded-[0.45rem]  bg-red-500  shadow"></div>
+          <div className=" w-full h-[30%] rounded-[0.45rem]  bg-red-500  shadow"></div>
         </div>
       </section>
     </main>

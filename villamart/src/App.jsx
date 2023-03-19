@@ -1,3 +1,5 @@
+import AboutUs from "./components/AboutUs";
+import ContactUs from "./components/ContactUs";
 import Hero from "./components/Hero";
 import NavSection from "./components/NavSection";
 import Services from "./components/Services";
@@ -7,7 +9,9 @@ function App() {
     <main>
       <NavSection />
       <Hero />
-      <Services/>
+      <Services />
+      <AboutUs />
+      <ContactUs />
     </main>
   );
 }
