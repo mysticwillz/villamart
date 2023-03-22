@@ -10,7 +10,7 @@ function App() {
     <main className="overflow-x-hidden">
       <NavSection />
       <Hero />
-      {/* <Slide /> */}
+      <Slide />
       <Services />
       <AboutUs />
       {/* <ContactUs /> */}
