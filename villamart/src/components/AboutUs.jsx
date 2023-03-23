@@ -8,14 +8,14 @@ export default function AboutUs() {
         About Us
       </h1>
       <section className="w-full flex justify-between flex-wrap items-center h-full md:h-[70vh] ">
-        <div className="md:w-[49%] md:h-full h-[50%]   w-full shadow">
+        <div className="md:w-[49%] md:h-full h-[50%]   w-full shadower">
           <img
             src="  https://images.pexels.com/photos/1093837/pexels-photo-1093837.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt="about card "
             className="w-full h-full rounded-[0.45rem]"
           />{" "}
         </div>
-        <div className="w-full md:w-[49%] md:h-full h-[80%] flex flex-col justify-center  items-center  shadow md:p-4">
+        <div className="w-full md:w-[49%] md:h-full h-[80%] flex flex-col justify-center  items-center  shadower md:p-4  rounded-[0.45rem]">
           <h3 className="text-gray-500 text-[1.5rem] text-center mt-12 mb-2 md:mb-0 md:mt-0 font-bold capitalize">
             Know more about us
           </h3>

@@ -37,7 +37,7 @@ export default function Slide() {
   ];
 
   return (
-    <main className="w-7xl mx-auto flex md:flex-row justify-between items-center mt-4 flex-col px-4 md:px-0 ">
+    <main className="w-7xl mx-auto flex md:flex-row justify-between items-center mt-4 flex-col px-2 md:px-0 ">
       <Carousel
         autoPlay={true}
         centerMode={false}
@@ -46,7 +46,7 @@ export default function Slide() {
         showThumbs={false}
         infiniteLoop={true}
         interval={3000}
-        className=" md:hidden w-[95%]"
+        className=" md:hidden w-[100%] shadower"
       >
         {swipe.map((card) => {
           const { image, title, text } = card;
@@ -72,7 +72,7 @@ export default function Slide() {
       {swipe.map((card) => {
         const { image, title, text } = card;
         return (
-          <div className=" w-[auto]  h-[150px]   hidden md:block">
+          <div className=" w-[auto]  h-[150px]   hidden md:block ">
             <img
               src={image}
               alt="Villa mart product card"

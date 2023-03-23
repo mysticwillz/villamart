@@ -8,7 +8,7 @@ export default function Services() {
         Our Services
       </h1>
       <section className="w-full flex justify-between items-center md:h-[85vh] h-[105vh] ">
-        <div className="w-[49%] h-full hidden md:block shadow">
+        <div className="w-[49%] h-full hidden md:block shadower">
           <div className="w-full h-full rounded-[0.45rem]  hidden md:flex items-center justify-center">
             <img
               src="https://images.pexels.com/photos/8753672/pexels-photo-8753672.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -18,7 +18,7 @@ export default function Services() {
           </div>
         </div>
         <div className=" w-full md:w-[49%]  h-full flex flex-col justify-between items-center">
-          <div className=" w-full h-[30%] rounded-[0.45rem]   shadow flex items-center justify-center ">
+          <div className=" w-full h-[30%] rounded-[0.45rem]   shadower flex items-center justify-center ">
             <div className=" w-[50%] h-full rounded-r-[0.45rem] px-2">
               <h3 className="text-[1.5rem] text-center font-bold text-gray-500">
                 Grocery Store
@@ -35,7 +35,7 @@ export default function Services() {
               className="h-full rounded-r-[0.45rem] w-[50%] "
             />
           </div>
-          <div className=" w-full h-[30%] rounded-[0.45rem]   shadow flex items-center justify-center ">
+          <div className=" w-full h-[30%] rounded-[0.45rem]   shadower flex items-center justify-center ">
             <div className=" w-[50%] h-full rounded-r-[0.45rem] px-2">
               <h3 className="text-[1.5rem] text-center font-bold text-gray-500">
                 Catering services
@@ -53,7 +53,7 @@ export default function Services() {
             />
           </div>
 
-          <div className=" w-full h-[30%] rounded-[0.45rem]   shadow flex items-center justify-center ">
+          <div className=" w-full h-[30%] rounded-[0.45rem]   shadower flex items-center justify-center ">
             <div className=" w-[50%] h-full rounded-r-[0.45rem] px-2">
               <h3 className="text-[1.5rem] text-center font-bold text-gray-500">
                 Grocery Delivery

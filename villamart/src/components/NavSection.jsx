@@ -12,27 +12,20 @@ export default function NavSection() {
 
       <ul className="nav-links text-[1.4rem] font-[Poppins] capitalize text-[#c50610] hidden md:block">
         <li className="stores  text-[#c50610]">
-          <a href="#stores">
+          <a href="#services">
             <i className="fa-sharp fa-solid fa-shop in"></i> services
           </a>
         </li>
 
         <li className="reviews">
-          <a href="#reviews">
+          <a href="#about">
             {" "}
-            <i className="fa-solid fa-sliders in"></i> reviews
-          </a>
-        </li>
-        <li className="reviews">
-          <a href="#reviews">
-            {" "}
-            <i className="fa-solid fa-sliders in"></i> reviews
+            <i className="fa-solid fa-sliders in"></i> about us
           </a>
         </li>
         <li className="about">
-          <a href="#services">
-            {" "}
-            <i className="fa-regular fa-address-card in"></i> about{" "}
+          <a href="#contact">
+            <i className="fa-regular fa-address-card in"></i> contact us
           </a>
         </li>
       </ul>
