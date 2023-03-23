@@ -2,7 +2,7 @@ import React from "react";
 import "../App.css";
 export default function Services() {
   return (
-    <main className="max-w-7xl mt-[2.5rem] md:mt-[3.5rem] mx-auto px-2 md:px-0">
+    <main className="max-w-7xl mt-[0.5rem] md:mt-[3.5rem] mx-auto px-2 md:px-0">
       <h1 className=" text-[2.3rem] md:text-[3rem] mb-[1.5rem] md:mb-[2.5rem] text-bold font-[Sora] text-center text-[#c40414]">
         {" "}
         Our Services
@@ -36,11 +36,6 @@ export default function Services() {
             />
           </div>
           <div className=" w-full h-[30%] rounded-[0.45rem]   shadow flex items-center justify-center ">
-            <img
-              src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt="services card two"
-              className="h-full rounded-l-[0.45rem] w-[50%] "
-            />
             <div className=" w-[50%] h-full rounded-r-[0.45rem] px-2">
               <h3 className="text-[1.5rem] text-center font-bold text-gray-500">
                 Catering services
@@ -51,6 +46,11 @@ export default function Services() {
                 dining experience.
               </p>
             </div>
+            <img
+              src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="services card two"
+              className="h-full rounded-l-[0.45rem] w-[50%] "
+            />
           </div>
 
           <div className=" w-full h-[30%] rounded-[0.45rem]   shadow flex items-center justify-center ">

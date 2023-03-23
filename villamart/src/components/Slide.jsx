@@ -37,7 +37,7 @@ export default function Slide() {
   ];
 
   return (
-    <main className="w-7xl mx-auto md:flex-row justify-between items-center mt-4 flex-col px-4 md:px-0 ">
+    <main className="w-7xl mx-auto flex md:flex-row justify-between items-center mt-4 flex-col px-4 md:px-0 ">
       <Carousel
         autoPlay={true}
         centerMode={false}
@@ -45,12 +45,13 @@ export default function Slide() {
         showStatus={false}
         showThumbs={false}
         infiniteLoop={true}
-        interval={2000}
+        interval={3000}
+        className=" md:hidden w-[95%]"
       >
         {swipe.map((card) => {
           const { image, title, text } = card;
           return (
-            <div className="w-full md:w-[230px] h-[250px] md:h-[130px]  mx-0 md:mx-[2rem] rounded-[15px] px-4 ">
+            <div className=" w-[100%] md:w-[230px] h-[330px] mx-0 md:mx-[2rem] rounded-[15px] px-4 ">
               <img
                 src={image}
                 alt="Villa mart product card"
@@ -68,6 +69,21 @@ export default function Slide() {
           );
         })}
       </Carousel>
+      {swipe.map((card) => {
+        const { image, title, text } = card;
+        return (
+          <div className=" w-[auto]  h-[150px]   hidden md:block">
+            <img
+              src={image}
+              alt="Villa mart product card"
+              className="w-[30%] h-[80%] mx-auto"
+            />
+            <h5 className="text-[1rem] text-center  text-gray-700 font-bold pt-1">
+              {title}
+            </h5>
+          </div>
+        );
+      })}
     </main>
   );
 }

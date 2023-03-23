@@ -13,7 +13,7 @@ function App() {
       <Slide />
       <Services />
       <AboutUs />
-      {/* <ContactUs /> */}
+      <ContactUs />
     </main>
   );
 }

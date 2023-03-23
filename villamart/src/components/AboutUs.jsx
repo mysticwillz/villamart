@@ -7,7 +7,7 @@ export default function AboutUs() {
         {" "}
         About Us
       </h1>
-      <section className="w-full flex justify-between flex-wrap items-center h-[70vh] ">
+      <section className="w-full flex justify-between flex-wrap items-center h-full md:h-[70vh] ">
         <div className="md:w-[49%] md:h-full h-[50%]   w-full shadow">
           <img
             src="  https://images.pexels.com/photos/1093837/pexels-photo-1093837.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -25,7 +25,7 @@ export default function AboutUs() {
             for providing high-quality products and exceptional customer service
             has helped us build a loyal customer base.
           </p>
-          <p className=" text-gray-500  text-[1rem] md:text-[1.1rem] hidden md:block mt-6 md:mt-0">
+          <p className=" text-gray-500  text-[1rem] md:text-[1.1rem] hidden md:block mt-6 md:mt-0 ">
             At our grocery store, We offer a wide range of products, including
             fresh produce, meat, dairy, bakery items, and pantry staples. We
             source our products from reliable suppliers to ensure that our
