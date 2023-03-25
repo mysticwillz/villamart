@@ -1,9 +1,13 @@
-import React from "react";
 import "./nav.css";
 import villamart from "../assets/villamart.png";
+import { BiMenu } from "react-icons/bi";
+import { AiOutlineClose } from "react-icons/ai";
+import { useState } from "react";
+import Sidebar from "./Sidebar";
 export default function NavSection() {
+  const [showMenu, setShowMenu] = useState(false);
   return (
-    <nav className="flex justify-between items-center px-8  w-full mx-auto ">
+    <nav className="flex justify-between items-center px-4 md:px-8  w-full mx-auto fixed top-0 z-[100] ">
       <img
         src={villamart}
         alt="villamart logo"
@@ -38,6 +42,22 @@ export default function NavSection() {
         <div className="two"></div>
         <div className="three"></div>
       </div>
+      {!showMenu ? (
+        <BiMenu
+          className="text-[4rem] text-white md:hidden"
+          onClick={() => {
+            setShowMenu(!showMenu);
+          }}
+        />
+      ) : (
+        <AiOutlineClose
+          className="text-[4rem] text-white md:hidden"
+          onClick={() => {
+            setShowMenu(!showMenu);
+          }}
+        />
+      )}
+      <Sidebar showMenu={showMenu} />
     </nav>
   );
 }
