@@ -6,7 +6,7 @@ import { BsFillCheckCircleFill } from "react-icons/bs";
 export default function Hero() {
   return (
     <>
-      <main className="w-7xl max-w-7xl mx-auto flex justify-center items-center w-full mt-4 overflow-x-hidden px-2 md:px-0">
+      <main className="w-7xl max-w-7xl mx-auto flex justify-center items-center w-full overflow-x-hidden px-2 md:px-0 mt-[8rem]">
         <section className="w-full md:w-[60%] h-auto font-[Poppins]">
           <h1 className="text-[2.7rem] md:text-[4rem]  text-[#3c641b] font-[Sora] leading-[3.4rem] md:leading-[3.9rem] tracking-[-0.07rem]  font-bold">
             Fresh
