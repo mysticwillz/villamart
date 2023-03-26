@@ -7,7 +7,7 @@ import Sidebar from "./Sidebar";
 export default function NavSection() {
   const [showMenu, setShowMenu] = useState(false);
   return (
-    <nav className="flex justify-between items-center px-4 md:px-8 h-[7rem] w-full mx-auto fixed top-0 z-[150] ">
+    <nav className="flex justify-between items-center px-4 md:px-8 h-[7rem] w-full mx-auto fixed top-0 z-[150]  shadow-lg">
       <img
         src={villamart}
         alt="villamart logo"

@@ -5,6 +5,7 @@ import rice from "../assets/rice.jpeg";
 import spices from "../assets/spices.jpeg";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import Separator1 from "./Separator1";
 export default function Slide() {
   const swipe = [
     {
@@ -37,7 +38,7 @@ export default function Slide() {
   ];
 
   return (
-    <main className="w-7xl mx-auto flex md:flex-row justify-between items-center mt-4 flex-col px-2 md:px-0 ">
+    <main className="w-7xl mx-auto flex md:flex-row justify-between items-center mt-4 flex-col px-2 md:px-0 relative">
       <Carousel
         autoPlay={true}
         centerMode={false}

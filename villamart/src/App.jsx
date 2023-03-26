@@ -9,7 +9,7 @@ import Slide from "./components/Slide";
 
 function App() {
   return (
-    <main className="overflow-x-hidden">
+    <main className="overflow-x-hidden ">
       <NavSection />
 
       <Hero />
