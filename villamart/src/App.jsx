@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
@@ -8,15 +9,32 @@ import Sidebar from "./components/Sidebar";
 import Slide from "./components/Slide";
 
 function App() {
+  const services = useRef(null);
+  const about = useRef(null);
+  const contact = useRef(null);
+  const home = useRef(null);
+
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop - 100,
+      behavior: "smooth",
+    });
+  };
   return (
     <main className="overflow-x-hidden ">
-      <NavSection />
+      <NavSection
+        scrollToSection={scrollToSection}
+        services={services}
+        about={about}
+        contact={contact}
+        home={home}
+      />
 
       <Hero />
       <Slide />
-      <Services />
-      <AboutUs />
-      <ContactUs />
+      <Services services={services} />
+      <AboutUs about={about} />
+      <ContactUs contact={contact} />
       <Footer />
     </main>
   );

@@ -1,9 +1,12 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 
-export default function AboutUs() {
+export default function AboutUs({ about }) {
   return (
-    <main className="max-w-7xl mt-[2.5rem] md:mt-[3.5rem] mx-auto px-2 ">
+    <main
+      ref={about}
+      className="max-w-7xl mt-[2.5rem] md:mt-[3.5rem] mx-auto px-2 "
+    >
       <h1 className="text-[2.3rem] md:text-[3rem] mb-[1.5rem] md:mb-[2.5rem] text-bold font-[Sora] text-center text-[#3c641b] ">
         {" "}
         About Us

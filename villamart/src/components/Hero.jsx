@@ -20,7 +20,12 @@ export default function Hero() {
               delicious foods with the freshest ingredients.
             </p>
             <button className=" mt-6 w-[15rem] h-[60px] rounded-[10px] border border-[#c50610] text-[1.4rem] text-[#c50610] hover:text-white hover:bg-[#c50610]   transition duration-300 ease-in">
-              <a href="#contact-us">send us a message</a>
+              <a
+                target="_blank"
+                href="https://api.whatsapp.com/send/?phone=2349081999924&text&type=phone_number&app_absent=0"
+              >
+                send us a message
+              </a>
             </button>{" "}
             <div className=" mt-4 w-full text-[0.8rem] md:text-[1.4rem]  text-gray-500 font-[Sora] font-normal ">
               <div className=" flex  items-center ">

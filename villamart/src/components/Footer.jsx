@@ -62,24 +62,14 @@ function Footer() {
           connect on socials
         </h4>
 
-        <div className=" w-[170px] flex justify-between  items-center ">
-          <a
-            target="_blank"
-            href="https://twitter.com/mysticwillz"
-            rel="noreferrer"
-          >
+        <div className=" w-[80px] flex justify-between  items-center ">
+          <a target="_blank" href="" rel="noreferrer">
             <FaTwitter className=" text-[30px]   cursor-pointer text-[#00acee]" />
           </a>
+
           <a
             target="_blank"
-            href="https://github.com/mysticwillz"
-            rel="noreferrer"
-          >
-            <FaGithub className=" text-[60px]  px-4 cursor-pointer text-white" />
-          </a>
-          <a
-            target="_blank"
-            href="https://instagram.com/mysticwillz"
+            href="https://api.whatsapp.com/send/?phone=2349081999924&text&type=phone_number&app_absent=0"
             rel="noreferrer"
           >
             <FaInstagram className=" text-[30px]   cursor-pointer text-[#fa5682]" />

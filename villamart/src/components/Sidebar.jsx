@@ -1,6 +1,13 @@
 import React from "react";
-import villamart from "../assets/villamart.png";
-export default function Sidebar({ showMenu }) {
+
+export default function Sidebar({
+  showMenu,
+  setShowMenu,
+  scrollToSection,
+  services,
+  about,
+  contact,
+}) {
   return (
     <main
       className={
@@ -11,26 +18,43 @@ export default function Sidebar({ showMenu }) {
     >
       <section className="flex flex-col mt-[5rem] items-center px-4 md:px-8  w-full mx-auto h-full ">
         <ul className=" text-[1.8rem] font-[Poppins] capitalize text-[#c50610] ">
-          <li className="stores  text-[#c50610]">
-            <a href="#services">
-              <i className="fa-sharp fa-solid fa-shop "></i> services
-            </a>
+          <li
+            onClick={() => {
+              scrollToSection(services);
+              setShowMenu(!showMenu);
+            }}
+            className="stores  text-[#c50610]"
+          >
+            <i className="fa-sharp fa-solid fa-shop "></i> services
           </li>
 
-          <li className="my-[5rem]">
-            <a href="#about">
-              {" "}
-              <i className="fa-solid fa-sliders "></i> about us
-            </a>
+          <li
+            onClick={() => {
+              scrollToSection(about);
+              setShowMenu(!showMenu);
+            }}
+            className="my-[5rem]"
+          >
+            {" "}
+            <i className="fa-solid fa-sliders "></i> about us
           </li>
-          <li className="about">
-            <a href="#contact">
-              <i className="fa-regular fa-address-card "></i> contact us
-            </a>
+          <li
+            onClick={() => {
+              scrollToSection(contact);
+              setShowMenu(!showMenu);
+            }}
+            className="about"
+          >
+            <i className="fa-regular fa-address-card "></i> contact us
           </li>
         </ul>
         <button className=" mt-[5rem] flex justify-center items-center contact w-[80%] h-[50px] rounded-[10px] bg-[#3c641b]  text-[1.4rem] text-[#fff] hover:bg-[#3c641b] hover:border hover:border-[#fff]  hover:text-white transition duration-300 ease-in">
-          <a href="#contact-us">contact us</a>
+          <a
+            target="_blank"
+            href="https://api.whatsapp.com/send/?phone=2349081999924&text&type=phone_number&app_absent=0"
+          >
+            contact us
+          </a>
         </button>
       </section>
     </main>

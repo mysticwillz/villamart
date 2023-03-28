@@ -2,9 +2,12 @@ import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaPhone, FaAddressCard } from "react-icons/fa";
 import Fade from "react-reveal/Fade";
-export default function ContactUs() {
+export default function ContactUs({ contact }) {
   return (
-    <main className="max-w-7xl mt-[2.5rem] md:mt-[3.5rem] mx-auto px-2  md:h-[50vh]  h-[60vh]">
+    <main
+      ref={contact}
+      className="max-w-7xl mt-[2.5rem] md:mt-[3.5rem] mx-auto px-2  md:h-[50vh]  h-[60vh]"
+    >
       <h1 className="text-[2.3rem] md:text-[3rem] mb-[1.5rem] md:mb-[2.5rem] text-bold font-[Sora] text-center  text-gray-700">
         {" "}
         Contact Us

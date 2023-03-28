@@ -3,9 +3,12 @@ import "../App.css";
 import Fade from "react-reveal/Fade";
 import { Zoom } from "react-reveal";
 
-export default function Services() {
+export default function Services({ services }) {
   return (
-    <main className="max-w-7xl mt-[0.5rem] md:mt-[3.5rem] mx-auto px-2  relative">
+    <main
+      ref={services}
+      className="max-w-7xl mt-[0.5rem] md:mt-[3.5rem] mx-auto px-2  relative"
+    >
       <h1 className=" text-[2.3rem] md:text-[3rem] mb-[1.5rem] md:mb-[2.5rem] text-bold font-[Sora] text-center text-[#c40414]">
         {" "}
         Our Services
