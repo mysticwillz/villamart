@@ -3,7 +3,7 @@ import "../App.css";
 import Separator1 from "./Separator1";
 export default function Services() {
   return (
-    <main className="max-w-7xl mt-[0.5rem] md:mt-[3.5rem] mx-auto px-2 md:px-0 relative">
+    <main className="max-w-7xl mt-[0.5rem] md:mt-[3.5rem] mx-auto px-2  relative">
       <h1 className=" text-[2.3rem] md:text-[3rem] mb-[1.5rem] md:mb-[2.5rem] text-bold font-[Sora] text-center text-[#c40414]">
         {" "}
         Our Services

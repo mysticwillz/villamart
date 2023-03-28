@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutUs() {
   return (
-    <main className="max-w-7xl mt-[2.5rem] md:mt-[3.5rem] mx-auto px-2 md:px-0">
+    <main className="max-w-7xl mt-[2.5rem] md:mt-[3.5rem] mx-auto px-2 ">
       <h1 className="text-[2.3rem] md:text-[3rem] mb-[1.5rem] md:mb-[2.5rem] text-bold font-[Sora] text-center text-[#3c641b] ">
         {" "}
         About Us
