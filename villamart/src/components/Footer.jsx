@@ -3,25 +3,17 @@ import { FaTwitter, FaInstagram, FaGithub } from "react-icons/fa";
 
 function Footer() {
   return (
-    <main className="w-full bg-[#3c641b]  mx-auto py-[35px] flex flex-col items-center justify-center  mt-6">
+    <main className="w-full bg-[#3c641b]  mx-auto py-[35px] px-2 flex flex-col items-center justify-center  mt-6">
       <section className="max-w-7xl text-white  flex justify-between w-full flex-wrap">
         <ul>
-          <li className=" text-[22px] font-bold">ABOUT KABAN</li>
+          <li className=" text-[22px] font-bold">ABOUT VILLAMART </li>
           <li className="capitalize text-[14px] transition duration-250 ease-in-out cursor-pointer">
             contact us
           </li>
           <li className="capitalize text-[14px] transition duration-250 ease-in-out cursor-pointer">
             about us
           </li>
-          <li className="capitalize text-[14px] transition duration-250 ease-in-out cursor-pointer">
-            careers
-          </li>
-          <li className="capitalize text-[14px] transition duration-250 ease-in-out cursor-pointer">
-            our blog
-          </li>
-          <li className="capitalize text-[14px] transition duration-250 ease-in-out cursor-pointer">
-            forum
-          </li>
+
           <li className="capitalize text-[14px] transition duration-250 ease-in-out cursor-pointer">
             terms and condition{" "}
           </li>
@@ -29,23 +21,11 @@ function Footer() {
         <ul>
           <li className=" text-[22px] font-bold">PAYMENT</li>
           <li className="capitalize text-[14px] transition duration-250 ease-in-out cursor-pointer">
-            kaban pay
-          </li>
-          <li className="capitalize text-[14px] transition duration-250 ease-in-out cursor-pointer">
-            wallet
-          </li>
-          <li className="capitalize text-[14px] transition duration-250 ease-in-out cursor-pointer">
-            mastercard
-          </li>
-          <li className="capitalize text-[14px] transition duration-250 ease-in-out cursor-pointer">
-            visa
-          </li>
-          <li className="capitalize text-[14px] transition duration-250 ease-in-out cursor-pointer">
-            verve
+            villamart pay
           </li>
         </ul>
         <ul>
-          <li className=" text-[22px] font-bold">BUYING ON KABAN</li>
+          <li className=" text-[22px] font-bold">BUYING ON VILLAMART </li>
           <li className="capitalize text-[14px] transition duration-250 ease-in-out cursor-pointer">
             buyers safety center
           </li>
@@ -55,14 +35,9 @@ function Footer() {
           <li className="capitalize text-[14px] transition duration-250 ease-in-out cursor-pointer">
             delivery
           </li>
-          <li className="capitalize text-[14px] transition duration-250 ease-in-out cursor-pointer">
-            kaban return policy
-          </li>
+
           <li className="capitalize text-[14px] transition duration-250 ease-in-out cursor-pointer">
             bulk purchase
-          </li>
-          <li className="capitalize text-[14px] transition duration-250 ease-in-out cursor-pointer">
-            digital services
           </li>
         </ul>
         <ul>
@@ -70,20 +45,15 @@ function Footer() {
           <li className="capitalize text-[14px] transition duration-250 ease-in-out cursor-pointer">
             privacy policy
           </li>
-          <li className="capitalize text-[14px] transition duration-250 ease-in-out cursor-pointer">
-            site map
-          </li>
+
           <li className="capitalize text-[14px] transition duration-250 ease-in-out cursor-pointer">
             track my order
           </li>
-          <li className="capitalize text-[14px] transition duration-250 ease-in-out cursor-pointer">
-            authenticate item policy
-          </li>
         </ul>
         <ul>
-          <li className=" text-[22px] font-bold">MAKE MONEY ON KABAN</li>
+          <li className=" text-[22px] font-bold">MAKE MONEY ON VILLAMART </li>
           <li className="capitalize text-[14px] transition duration-250 ease-in-out cursor-pointer">
-            become a kaban affiliate
+            become a villamart affiliate
           </li>
         </ul>
       </section>
@@ -118,7 +88,7 @@ function Footer() {
       </section>
       <p className="  text-white">
         {" "}
-        Copyright &copy; Eze Williams 2023 . All rights reserved{" "}
+        Copyright &copy; Villamart 2023. All rights reserved{" "}
       </p>
     </main>
   );

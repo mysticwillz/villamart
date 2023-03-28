@@ -5,7 +5,7 @@ import rice from "../assets/rice.jpeg";
 import spices from "../assets/spices.jpeg";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import Separator1 from "./Separator1";
+import Fade from "react-reveal/Fade";
 export default function Slide() {
   const swipe = [
     {
@@ -38,53 +38,55 @@ export default function Slide() {
   ];
 
   return (
-    <main className="w-7xl mx-auto flex md:flex-row justify-between items-center mt-4 flex-col px-2 md:px-0 relative">
-      <Carousel
-        autoPlay={true}
-        centerMode={false}
-        showIndicators={false}
-        showStatus={false}
-        showThumbs={false}
-        infiniteLoop={true}
-        interval={3000}
-        className=" md:hidden w-[100%] shadower"
-      >
+    <Fade bottom distance={"20%"}>
+      <main className="w-7xl mx-auto flex md:flex-row justify-between items-center mt-4 flex-col px-2 md:px-0 relative">
+        <Carousel
+          autoPlay={true}
+          centerMode={false}
+          showIndicators={false}
+          showStatus={false}
+          showThumbs={false}
+          infiniteLoop={true}
+          interval={3000}
+          className=" md:hidden w-[100%] shadower"
+        >
+          {swipe.map((card) => {
+            const { image, title, text } = card;
+            return (
+              <div className=" w-[100%] md:w-[230px] h-[330px] mx-0 md:mx-[2rem] rounded-[15px] px-4 ">
+                <img
+                  src={image}
+                  alt="Villa mart product card"
+                  className="w-[30%] h-[50%] mx-auto"
+                />
+                <h5 className="text-[1rem]  text-gray-700 font-bold pt-1">
+                  {title}
+                </h5>
+                <div>
+                  <p className="text-[0.98rem] leading-[1rem] text-gray-400 font-normal text-left">
+                    {text}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
+        </Carousel>
         {swipe.map((card) => {
           const { image, title, text } = card;
           return (
-            <div className=" w-[100%] md:w-[230px] h-[330px] mx-0 md:mx-[2rem] rounded-[15px] px-4 ">
+            <div className=" w-[auto]  h-[150px]   hidden md:block ">
               <img
                 src={image}
                 alt="Villa mart product card"
-                className="w-[30%] h-[50%] mx-auto"
+                className="w-[30%] h-[80%] mx-auto"
               />
-              <h5 className="text-[1rem]  text-gray-700 font-bold pt-1">
+              <h5 className="text-[1rem] text-center  text-gray-700 font-bold pt-1">
                 {title}
               </h5>
-              <div>
-                <p className="text-[0.98rem] leading-[1rem] text-gray-400 font-normal text-left">
-                  {text}
-                </p>
-              </div>
             </div>
           );
         })}
-      </Carousel>
-      {swipe.map((card) => {
-        const { image, title, text } = card;
-        return (
-          <div className=" w-[auto]  h-[150px]   hidden md:block ">
-            <img
-              src={image}
-              alt="Villa mart product card"
-              className="w-[30%] h-[80%] mx-auto"
-            />
-            <h5 className="text-[1rem] text-center  text-gray-700 font-bold pt-1">
-              {title}
-            </h5>
-          </div>
-        );
-      })}
-    </main>
+      </main>
+    </Fade>
   );
 }
