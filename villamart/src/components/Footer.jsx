@@ -69,7 +69,7 @@ function Footer() {
 
           <a
             target="_blank"
-            href="https://api.whatsapp.com/send/?phone=2349081999924&text&type=phone_number&app_absent=0"
+            href="https://www.instagram.com/villamartfood/"
             rel="noreferrer"
           >
             <FaInstagram className=" text-[30px]   cursor-pointer text-[#fa5682]" />

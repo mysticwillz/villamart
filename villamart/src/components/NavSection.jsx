@@ -20,7 +20,7 @@ export default function NavSection({
       <img
         src={villamart}
         alt="villamart logo"
-        className="  w-[5.23rem] h-[4rem] flex justify-center items-center "
+        className="  w-[10.23rem] h-[7.8rem] flex justify-center items-center  cursor-pointer"
         onClick={() => {
           scrollToSection(home);
         }}
